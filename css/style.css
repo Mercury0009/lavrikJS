@@ -1,0 +1,14 @@
+.good{
+    color: green;
+    font-size: 32px;
+}
+
+.bad{
+    color: red;
+    font-size: 32px;
+}
+
+.errors{
+    color: red;
+}
+

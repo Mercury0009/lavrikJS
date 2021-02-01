@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavric Lesson 8</title>
+</head>
+<body>
+    <script>
+
+        var a, b, op, res;
+        a = +prompt("Enter 1st number");
+
+        while(isNaN(a) || a == ""){
+            a = +prompt("Enter 1st !NUMBER");
+        }
+
+        op = prompt("Enter operator: +, -, * or /");
+
+        while(op != "+" && op != "-" && op != "*" && op !="/"){
+            op = prompt("Enter operator: +, -, * or /");
+        }
+
+        b = +prompt("Enter 2st number");
+
+        while(op =="/" && b == 0){
+            b = +prompt("Can't be divided by zero");
+        }
+
+        while(isNaN(b) || b == ""){
+            b = +prompt("Enter 2st !NUMBER");
+        }
+
+
+
+
+        console.log(op)
+
+        if (op == "+"){
+            res = a + b;
+        }
+
+        else if (op == "-"){
+            res = a - b;
+        }
+        
+        else if (op == "/"){
+            res = a / b;
+        }
+        
+        else {
+            res = a * b;
+        }
+
+        alert (res);
+
+    </script>
+</body>
+</html>
